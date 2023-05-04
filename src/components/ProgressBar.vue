@@ -69,14 +69,12 @@
 </template>
 
 <script>
-import {useStore} from "vuex"
 
 export default {
     name: 'ProgressBar',
 
     computed: {
-        progress: (vm) => vm.$store.state.progress,
-        imgSrc: (vm) => vm.$store.state.progress === 0 ? '../assets/icons/star.svg' : 0
+        progress: (vm) => vm.$store.state.stages[0].games[0].bestResult + vm.$store.state.stages[1].games[0].bestResult + vm.$store.state.stages[2].games[0].bestResult + vm.$store.state.stages[3].games[0].bestResult + vm.$store.state.stages[4].games[0].bestResult + vm.$store.state.stages[5].games[0].bestResult + +vm.$store.state.stages[5].games[1].bestResult
     }
 }
 </script>

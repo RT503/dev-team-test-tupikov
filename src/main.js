@@ -15,7 +15,7 @@ const store = createStore({
                 'games': [
                     {
                         'name': 'Игра 1.1',
-                        'bestResult': 0,
+                        'bestResult': 20,
                         'isPlayed': false
                     }
                 ]
@@ -27,7 +27,7 @@ const store = createStore({
                     'games': [
                         {
                             'name': 'Игра 2.1',
-                            'bestResult': 0,
+                            'bestResult': 21,
                             'isPlayed': false
                         }
                     ]
@@ -39,7 +39,7 @@ const store = createStore({
                     'games': [
                         {
                             'name': 'Игра 3.1',
-                            'bestResult': 0,
+                            'bestResult': 100,
                             'isPlayed': false
                         }
                     ]
@@ -75,7 +75,7 @@ const store = createStore({
                     'games': [
                         {
                             'name': 'Игра 6.1',
-                            'bestResult': 0,
+                            'bestResult': 300,
                             'isPlayed': false
                         },
                         {
@@ -101,9 +101,7 @@ const store = createStore({
         }
     },
     mutations: {
-        increment(state) {
-            state.progress++
-        }
+
     }
 })
 
