@@ -32,33 +32,27 @@
         <div class="squares-row">
             <div class="square square_rounded_left">
                 <div class="bar square_rounded_left" :style="{ width: progress < 25 ? progress * 4 + '%' : 100 + '%'}">
-                    {{ progress }}
                 </div>
             </div>
             <div class="square">
                 <div class="bar " :style="{ width: (progress > 25 ) ? (progress - 25) * 4 + '%' : 0 }">
-                    {{ progress }}
                 </div>
             </div>
 
             <div class="square">
                 <div class="bar " :style="{ width: progress < 50 && progress < 100? 0 : (progress - 50) * 2 + '%' }">
-                    {{ progress }}
                 </div>
             </div>
             <div class="square">
                 <div class="bar " :style="{ width: progress < 100 ? 0 : (progress - 100) + '%' }">
-                    {{ progress }}
                 </div>
             </div>
             <div class="square">
                 <div class="bar " :style="{ width: progress < 200 ? 0 : (progress - 200) / 2.9 + '%' }">
-                    {{ progress }}
                 </div>
             </div>
             <div class="square square_rounded_right">
                 <div class="bar " :style="{ width: progress < 500 ? 0 : (progress - 500) / 5 + '%' }">
-                    {{ progress }}
                 </div>
             </div>
         </div>
